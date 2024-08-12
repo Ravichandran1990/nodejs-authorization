@@ -1,0 +1,27 @@
+// this is used for request client from vs code package
+
+GET http://localhost:5000/users
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Sonu",
+    "pass": "Sonu1234"
+}
+
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "name": "Sonu",
+    "pass": "Sonu1234"
+}
+
+###
+GET http://localhost:5000/validateUsers
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU29udSIsInBhc3MiOiIkMmIkMTAkM3JKOVExQTZIc0RTajdsSEluWHQwdXZITFpKWE8yWGlYYnozdThRLmVNenhTRzJTcXU0MWUiLCJpYXQiOjE3MjM0NzcwOTQsImV4cCI6MTcyMzQ3NzE1NH0.nnjPN-Bw9Wi_icULOHzt07nXIxWYjf5suERVkN_R2q0
